@@ -1,0 +1,18 @@
+# YAMLの書き方
+# スカラー型
+int: 0
+string: "Hello"
+float: 3.14
+bool: true
+# シーケンス型
+array:
+- 100
+- 200
+- 300
+# list: [100, 200, 300]
+list: [100, 200, 300]
+# Map
+person:
+ name: "Taro"
+ age: 20
+
