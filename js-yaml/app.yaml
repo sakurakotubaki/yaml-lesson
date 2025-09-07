@@ -1,0 +1,18 @@
+# using js-yaml
+# スカラー型
+int: 36
+string: "hello"
+bool: false
+
+# array
+array:
+ - 10
+ - 20
+ - 30
+# case []
+list: [10, 20, 30]
+
+# map
+person:
+ name: "Jiro"
+ age: 30
