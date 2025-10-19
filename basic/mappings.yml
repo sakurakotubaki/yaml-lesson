@@ -1,0 +1,14 @@
+# マッピングの例
+Mappings:
+  RegionMap: # マップ名
+    us-east-1: # トップレベルキー
+      AMI: ami-0ff8a91507f77f867
+    ap-northeast-1: # セカンドレベルキー
+      AMI: ami-047bb4163c506cd98
+Resources:
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      # ImageIdはCloud Fomationを実行するリージョンによって!Refの値が変更されて
+      # 結果的に参照するAMI IDが変わる。
+      ImageId: !FindInMap [RegionMap, !Ref AWS::Region, AMI]
