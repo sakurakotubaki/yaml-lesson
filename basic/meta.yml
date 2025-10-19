@@ -1,0 +1,15 @@
+Parameters:
+  SystemName: # パラメータ名称
+    Type: string # データ型
+    Default: "Demo" # 初期値
+    Description: System Name
+  EnvType:
+    Type: string
+    AllowedValues: # 入力可能な値
+      - dev
+      - staging
+      - prod
+  InstanceType:
+    Type: string
+    Default: t2.micro
+    Description: EC2 Instance Type

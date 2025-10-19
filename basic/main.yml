@@ -1,0 +1,28 @@
+# ymlの書き方。
+# Scalars Key: Value
+string: Text # 文字列
+integer: 42 # 数字
+bool: true # 真偽値 true or false
+float: 3.14 # 浮動小数点数
+null_value: null # null値
+# Sequences - List of items
+# - ついたらたリスト
+parameters:
+  - id: 1
+  - query: xxxSite
+  - page: 5
+# []でもリストを書ける。
+collection: [apple, banana, cherry]
+# Mappings - Key: Value pairs
+mysql:
+  host: localhost
+  port: 3306
+  username: root
+  password: password
+# ネストもできる。
+server:
+  name: MyServer
+  location:
+    country: Japan
+    city: Tokyo
+# コメントは#から始まる。

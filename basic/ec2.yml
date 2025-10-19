@@ -1,0 +1,11 @@
+# EC2のインスタンスを作成するテンプレート
+Resources:
+  VPC: # 任意の名称
+    Type: AWS::EC2::VPC # 作成するリソースタイプ
+    Properties:
+      CidrBlock: "10.0.0.0/16" # リソースごとのプロパティ
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: "ami-0abcdef1234567890"
+      InstanceType: t.2.micro

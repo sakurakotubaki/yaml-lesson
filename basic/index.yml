@@ -1,7 +1,7 @@
 # YAMLの書き方
 # スカラー型
 int: 0
-string: "Hello"
+string: Hello
 float: 3.14
 bool: true
 # シーケンス型
@@ -13,6 +13,6 @@ array:
 list: [100, 200, 300]
 # Map
 person:
- name: "Taro"
+ name: Taro
  age: 20
 

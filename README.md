@@ -19,3 +19,16 @@ yamlをjsonに変換するサービスを使用するとどのようなデータ
 https://eemeli.org/yaml-playground/
 
 ![alt text](<CleanShot 2025-09-07 at 19.57.45.png>)
+
+[CloudFormation テンプレート形式のバージョン構文](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/UserGuide/format-version-structure.html)
+
+[組み込み関数](https://docs.aws.amazon.com/ja_jp/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference.html)
+
+| 関数（省略） | 関数（完全） | 説明 |
+|-------------|-------------|------|
+| !Ref | Ref: | パラメータ、リソースの属性を参照 |
+| !Sub | Fn::Sub: | パラメータ、リソースの属性を参照、文字列結合 |
+| !GetAtt | Fn::GetAtt: | 任意に指定した属性を参照 |
+| !FindInMap | Fn::FindInMap: | マップからキーに合致する値を参照 |
+| !ImportValue | Fn::ImportValue: | 他のスタックから値のインポート |
+| !Equals | Fn::Equals: | Conditions の条件式で利用。値が一致するか判定 |
